@@ -1,4 +1,4 @@
-name: Rust
+name: Deloy GitHub Page
 
 on:
   push:
@@ -44,7 +44,7 @@ jobs:
       run: ./trunk build --release --public-url "${GITHUB_REPOSITORY#*/}"
 
     - name: Setup Pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v3
       with:
         enablement: true
 
