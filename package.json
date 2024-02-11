@@ -1,0 +1,12 @@
+{
+  "name": "errer_qa",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^4.6.1"
+  }
+}
