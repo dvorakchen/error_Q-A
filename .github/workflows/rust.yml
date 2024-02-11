@@ -31,16 +31,16 @@ jobs:
     - name: Build with Trunk
       run: ./trunk build --release --public-url "${GITHUB_REPOSITORY#*/}"
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-      with:
-        enablement: true
+    # - name: Setup Pages
+    #   uses: actions/configure-pages@v4
+    #   with:
+    #     enablement: true
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3.0.1
       with:
         path: './dist'
 
     - name: Deploy to GitHub Pages 🚀
       id: deployment
-      uses: actions/deploy-pages@v3
+      uses: actions/deploy-pages@v4.0.4
