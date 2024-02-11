@@ -1,4 +1,0 @@
-[[hooks]]
-stage = "pre_build"
-command = "powershell"
-command_arguments = ["-c", ""]
