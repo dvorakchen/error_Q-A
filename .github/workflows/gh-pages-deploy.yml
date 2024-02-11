@@ -31,8 +31,8 @@ Github-Pages-Release:
     - uses: actions/checkout@v4 # repo checkout
 
     # Install Rust Nightly Toolchain, with Clippy & Rustfmt
-    - name: Install nightly Rust
-        uses: dtolnay/rust-toolchain@nightly
+    - name: Install Rust
+        uses: dtolnay/rust-toolchain
         with:
         components: clippy, rustfmt
 
@@ -44,8 +44,8 @@ Github-Pages-Release:
 
 
     # If using tailwind...
-    # - name: Download and install tailwindcss binary
-    #   run: npm install -D tailwindcss && npx tailwindcss -i <INPUT/PATH.css> -o <OUTPUT/PATH.css>  # run tailwind
+    - name: Download and install tailwindcss binary
+      run: npm install
 
 
     - name: Download and install Trunk binary
